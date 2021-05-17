@@ -2,44 +2,45 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: #fff;
-  box-sizing: border-box;
+	background-color: #fff;
+	box-sizing: border-box;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+main {
+	flex: 1 0 auto;
 }
 
 .navbar {
-  background-color: #fff;
-  box-shadow: 0px 3px 3px #aeaeae;
+	background-color: #8f5bfe;
+	box-shadow: 0px 3px 3px #aeaeae;
 }
-.navbar .container-navbar {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-  max-width: 1440px;
-  margin: auto;
+
+.page-footer {
+	background-color: #8f5bfe;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
-.navbar .container-navbar__logo {
-  height: 50px;
-  justify-content: left;
-  align-self: center;
+
+.title {
+	font-size: 37px;
 }
-.navbar .container-navbar .container-links {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  list-style-type: none;
+
+.subtitle {
+	font-size: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */

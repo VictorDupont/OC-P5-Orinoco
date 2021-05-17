@@ -4,42 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Orinico - Site de commerce en ligne.</title>
+		<title>Orinico - Produits.</title>
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="public/css/materialize.min.css"
+			href="../public/css/materialize.min.css"
 			media="screen,projection"
 		/>
-		<link rel="stylesheet" href="public/css/main.css" />
-		<script defer src="./index.js"></script>
+		<link rel="stylesheet" href="../public/css/main.css" />
+		<script defer src="../index.js"></script>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar">
-				<div class="nav-wrapper">
-					<a href="#" class="brand-logo" alt="Orinoco">Orinoco</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="">Accueil</a></li>
-						<li><a href="page/product.html">Produits</a></li>
-						<li><a href="page/basket.html">Panier</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-
-		<main>
-			<div class="container">
-				<div class="center">
-					<span class="title">Bienvenue sur Orinoco</span><br />
-					<span class="subtitle">Boutique d'oursons en ligne.</span>
-				</div>
-
-				<section id="content" class="row"></section>
+		<nav class="navbar">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo" alt="Orinoco">Orinoco</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="product.html">Produits</a></li>
+					<li><a href="basket.html">Panier</a></li>
+				</ul>
 			</div>
-		</main>
+		</nav>
+
+		<div class="container">
+			<div class="center">
+				<span class="title">Orinoco</span><br />
+				<span class="subtitle">Voici tous nos produits.</span>
+			</div>
+
+			<section id="content" class="row"></section>
+		</div>
 
 		<footer class="page-footer">
 			<div class="container">
@@ -72,11 +68,6 @@
 							<li>
 								<a class="grey-text text-lighten-3" href="#!">Mentions légales</a>
 							</li>
-							<li>
-								<a class="grey-text text-lighten-3" href="page/thank-you.html"
-									>Merci de votre achat ! (Tempo)</a
-								>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -86,6 +77,6 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="public/js/materialize.min.js"></script>
+		<script type="text/javascript" src="../public/js/materialize.min.js"></script>
 	</body>
 </html>
