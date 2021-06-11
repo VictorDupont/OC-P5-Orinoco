@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Orinico - Votre panier.</title>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="nav-wrapper">
+				<a href="index.html" class="brand-logo" alt="Orinoco">Orinoco</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="../index.html">Accueil</a></li>
+					<li><a href="basket.html">Panier</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="space-50px"></div>
+		<main class="container">
+			<div class="row">
+				<div class="col s12">
+					<div id="basket"></div>
+				</div>
+			</div>
+			<div class="row" id="form_message"></div>
+			<div class="row">
+				<form class="col s12" method="POST" name="form_order">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate" value="John" />
+							<label for="first_name">First Name</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate" value="Doe" />
+							<label for="last_name">Last Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input
+								id="email"
+								type="email"
+								class="validate"
+								value="johndoe@email.com"
+							/>
+							<label for="email">Email</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6">
+							<input
+								id="address"
+								type="text"
+								class="validate"
+								value="7 Rue John Doe"
+							/>
+							<label for="address">Adresse</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="city" type="text" class="validate" value="Paris" />
+							<label for="city">Ville</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<button
+								class="btn btn-large waves-effect green darken-3"
+								id="confirm_order"
+							>
+								Commander
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Orinoco</h5>
+						<p class="grey-text text-lighten-4">
+							Orinoco est un site de commerce en ligne vendant des oursons en peluche
+							fabriqués en France.
+						</p>
+					</div>
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">À propos</h5>
+						<ul>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!"
+									>Conditions Générales de vente</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!"
+									>Conditions Générales d'Utilisation</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!"
+									>Politique de confidentialité</a
+								>
+							</li>
+							<li>
+								<a class="grey-text text-lighten-3" href="#!">Mentions légales</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">© 2021 Orinoco - Tous droits réservés.</div>
+			</div>
+		</footer>
+		<script src="js/basket.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+	</body>
+</html>

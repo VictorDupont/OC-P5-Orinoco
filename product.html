@@ -4,25 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Orinico - Votre panier.</title>
+		<title>Orinico - Produits.</title>
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="../public/css/materialize.min.css"
+			href="css/materialize.min.css"
 			media="screen,projection"
 		/>
-		<link rel="stylesheet" href="../public/css/main.css" />
-		<script defer src="../index.js"></script>
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<nav class="navbar">
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo" alt="Orinoco">Orinoco</a>
+				<a href="index.html" class="brand-logo" alt="Orinoco">Orinoco</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="../index.html">Accueil</a></li>
-					<li><a href="product.html">Produits</a></li>
+					<li><a href="index.html">Accueil</a></li>
 					<li><a href="basket.html">Panier</a></li>
 				</ul>
 			</div>
@@ -31,30 +29,11 @@
 		<div class="container">
 			<div class="center">
 				<span class="title">Orinoco</span><br />
-				<span class="subtitle">Voici votre panier :</span>
+				<span class="subtitle">Voici plus d'informations sur ce produit.</span>
+				<span id="added_to_basket"></span>
 			</div>
 
-			<div class="basket">
-				<table>
-					<thead>
-						<tr>
-							<th>Image</th>
-							<th>Produit</th>
-							<th>Quantité</th>
-							<th>Prix à l'unité</th>
-							<th>Total</th>
-						</tr>
-					</thead>
-					<tbody>
-						<p>Future commande.</p>
-					</tbody>
-					<tfoot>
-						<tr>
-							<td>Total de la commande :</td>
-						</tr>
-					</tfoot>
-				</table>
-			</div>
+			<main id="product_informations"></main>
 		</div>
 
 		<footer class="page-footer">
@@ -96,7 +75,7 @@
 				<div class="container">© 2021 Orinoco - Tous droits réservés.</div>
 			</div>
 		</footer>
-
-		<script type="text/javascript" src="../public/js/materialize.min.js"></script>
+		<script src="js/product.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>
 </html>

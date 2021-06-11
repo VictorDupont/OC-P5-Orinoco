@@ -8,13 +8,10 @@
 
 body {
 	background-color: #fff;
-	box-sizing: border-box;
 	display: flex;
-	min-height: 100vh;
 	flex-direction: column;
-}
-
-body {
+	height: 100vh;
+	margin: 0;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -29,10 +26,7 @@ main {
 
 .page-footer {
 	background-color: #8f5bfe;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
+	margin-top: auto;
 }
 
 .title {
@@ -41,6 +35,36 @@ main {
 
 .subtitle {
 	font-size: 24px;
+}
+.space-50px {
+	margin-bottom: 50px;
+}
+.space-100px {
+	margin-bottom: 100px;
+}
+.card-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-image > img {
+	height: 130px;
+	object-fit: cover;
+}
+
+.card:hover {
+	box-shadow: 0 3px 3px 0 rgb(0 0 0 / 14%), 0 4px 1px -2px rgb(0 0 0 / 12%),
+		0 1px 7px 0 rgb(0 0 0 / 20%);
+}
+
+.product-title {
+	font-size: 20px;
+}
+.product-description {
+	font-size: 17px;
+}
+.product-price {
+	font-size: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

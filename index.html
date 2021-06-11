@@ -4,32 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Orinico - Site de commerce en ligne.</title>
+		<title>Orinico - Site de commerce d'oursons en ligne.</title>
 
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<link
 			type="text/css"
 			rel="stylesheet"
-			href="public/css/materialize.min.css"
+			href="css/materialize.min.css"
 			media="screen,projection"
 		/>
-		<link rel="stylesheet" href="public/css/main.css" />
-		<script defer src="./index.js"></script>
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
 				<div class="nav-wrapper">
-					<a href="#" class="brand-logo" alt="Orinoco">Orinoco</a>
+					<a href="index.html" class="brand-logo" alt="Orinoco">Orinoco</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="">Accueil</a></li>
-						<li><a href="page/product.html">Produits</a></li>
-						<li><a href="page/basket.html">Panier</a></li>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="basket.html">Panier</a></li>
 					</ul>
 				</div>
 			</nav>
 		</header>
-
+		<div class="space-50px"></div>
 		<main>
 			<div class="container">
 				<div class="center">
@@ -37,7 +35,7 @@
 					<span class="subtitle">Boutique d'oursons en ligne.</span>
 				</div>
 
-				<section id="content" class="row"></section>
+				<section id="products" class="row"></section>
 			</div>
 		</main>
 
@@ -72,11 +70,6 @@
 							<li>
 								<a class="grey-text text-lighten-3" href="#!">Mentions légales</a>
 							</li>
-							<li>
-								<a class="grey-text text-lighten-3" href="page/thank-you.html"
-									>Merci de votre achat ! (Tempo)</a
-								>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -85,7 +78,7 @@
 				<div class="container">© 2021 Orinoco - Tous droits réservés.</div>
 			</div>
 		</footer>
-
-		<script type="text/javascript" src="public/js/materialize.min.js"></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>
 </html>

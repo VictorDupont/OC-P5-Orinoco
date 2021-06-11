@@ -1,5 +1,3 @@
-# OC-P5-Orinoco
+# OC-P5-Orinoco - Orinoco : Entreprise de commerce d'oursons en ligne !
 
-Orinoco - Entreprise de commerce en ligne.
-
-En cours : Travail sur les bases frontend du site.
+Projet n°5 du parcours Développeur Web d'OpenClassrooms.
