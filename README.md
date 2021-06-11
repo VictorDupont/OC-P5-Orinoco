@@ -1,3 +1,9 @@
-# OC-P5-Orinoco - Orinoco : Entreprise de commerce d'oursons en ligne !
+# OC-P5-Orinoco - Orinoco : Ecommerce website selling teddies !
 
-Projet n°5 du parcours Développeur Web d'OpenClassrooms.
+To make the project work:
+
+1. Open a terminal.
+2. The location must be in backend folder.
+3. Execute the following command: npm start.
+
+And the website is now working!
