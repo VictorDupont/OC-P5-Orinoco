@@ -1,4 +1,4 @@
-# OC-P5-Orinoco - Orinoco : Ecommerce website selling teddies !
+# OC-P5-Orinoco - Ecommerce website selling teddies !
 
 To make the project work:
 
