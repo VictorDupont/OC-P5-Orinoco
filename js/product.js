@@ -4,14 +4,15 @@ const API_URL = `http://localhost:3000/api/teddies/`;
 
 product_id = location.search.substring(4); // Get id with removal of ?id=
 
-fetch(API_URL + product_id)
-	.then((response) => response.json())
+fetch(API_URL + product_id) // fetch API to get data of a product
+	.then((response) => response.json()) // transform the response in json
 	.then((data) => {
-		informationsOnProduct(data);
-		addBasket(data);
+		informationsOnProduct(data); // use the data to execute the function
+		addBasket(data); // use the data to execute the function
 	});
 
 function informationsOnProduct(product) {
+	// Function displays informations about a teddy like image, name, description and price
 	document.getElementById("product_informations").innerHTML += `
     <div class="row">
     <div class="col l6 s12">
@@ -27,11 +28,12 @@ function informationsOnProduct(product) {
         <a class="waves-effect waves-light btn-large purple" id="add_to_basket">Ajouter au panier</a>
     </div>
     </div>
-    `;
+    `; // (price is divided by 100 to get the price in EUR)
 
 	console.log(product_informations);
 
 	product.colors.forEach((option) => {
+		// for each variation color of a teddy, create an option in the select
 		let product_option = document.createElement("option");
 		let select_variation = document.getElementById("variation");
 		select_variation.style.display = "block";
@@ -44,9 +46,10 @@ function addBasket(product) {
 	let product_added = document.getElementById("added_to_basket");
 
 	product_buy.addEventListener("click", function () {
-		let user_basket = JSON.parse(localStorage.getItem("user_basket")) || [];
-		user_basket.push(product);
-		localStorage.setItem("user_basket", JSON.stringify(user_basket));
+		// On click on the button to add to basket, execute the function
+		let user_basket = JSON.parse(localStorage.getItem("user_basket")) || []; // Get user_basket otherwise variable is an empty array
+		user_basket.push(product); // Add the teddy to localStorage
+		localStorage.setItem("user_basket", JSON.stringify(user_basket)); // Set user_basket with the new one
 
 		product_added.innerHTML = `<div class="card-panel green darken-3 white-text">
         Le produit a été ajouté à votre panier!

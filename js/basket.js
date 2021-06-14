@@ -7,7 +7,7 @@ buyingProcess();
 confirmOrder();
 
 function checkBasket() {
-	let basket_content = JSON.parse(localStorage.getItem("user_basket"));
+	let basket_content = JSON.parse(localStorage.getItem("user_basket")); // parse item
 
 	if (
 		basket_content == "" ||
@@ -15,11 +15,13 @@ function checkBasket() {
 		basket_content == [] ||
 		basket_content.length < 1
 	) {
+		// Check if items is  null or empty
 		document.getElementById(
 			"form_message"
 		).innerHTML = `<div class="card-panel orange darken-3 white-text">Votre panier est vide... Merci de refaire celui-ci.</div>`;
 		return false;
 	} else {
+		// parse item and for each product, push in
 		JSON.parse(localStorage.getItem("user_basket")).forEach((product) =>
 			products.push(product._id)
 		);
@@ -28,6 +30,7 @@ function checkBasket() {
 }
 
 function removeBasket(id) {
+	// Remove a product with its id
 	document.getElementById("produit" + id).remove();
 	user_basket.splice(id, 1);
 	localStorage.clear();
@@ -36,6 +39,7 @@ function removeBasket(id) {
 }
 
 function checkFormInputs() {
+	// Checks that all data is valid to be send
 	let first_name = document.getElementById("first_name").value;
 	let last_name = document.getElementById("last_name").value;
 	let email = document.getElementById("email").value;
@@ -93,6 +97,7 @@ function checkFormInputs() {
 }
 
 function buyingProcess() {
+	// Create an array with all data
 	if (JSON.parse(localStorage.getItem("user_basket")).length > 0) {
 		let table = document.createElement("table");
 		let table_line = document.createElement("tr");
@@ -149,6 +154,7 @@ function buyingProcess() {
 }
 
 function confirmOrder() {
+	// Confirm the order with some functions and send it with fetch POST, create an item user_order with infos on the user and all products of his basket !
 	let confirm_order = document.getElementById("confirm_order");
 	confirm_order.addEventListener("click", function (event) {
 		event.preventDefault();
